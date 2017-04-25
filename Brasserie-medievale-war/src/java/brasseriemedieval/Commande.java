@@ -17,6 +17,9 @@ public class Commande {
     private static ArrayList<Etat> liste_etats = new ArrayList<Etat>();    
     private ArrayList<Article> liste_article_commande;
     
+    public Commande()
+    {
+    }
     
    /**
     * 

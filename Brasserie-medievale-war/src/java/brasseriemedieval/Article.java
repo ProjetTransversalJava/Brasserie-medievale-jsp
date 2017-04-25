@@ -14,6 +14,10 @@ public class Article {
     private String nom;
     private int prix;
     
+    public Article()
+    {
+    }
+    
     /**
      * 
      * @param id_article INT
