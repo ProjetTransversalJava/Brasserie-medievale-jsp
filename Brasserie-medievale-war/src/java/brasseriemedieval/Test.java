@@ -19,15 +19,14 @@ import javax.servlet.http.HttpServletResponse;
 public class Test extends HttpServlet {
     
     Article testArticle = new Article();
-    
-    testArticle.setPrix(12);
-    
+     
     public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException{     
-	       
-        request.setAttribute("prix", testArticle.getPrix());
-        request.setAttribute("id", testArticle.getIdArticle());
-        request.setAttribute("article", testArticle.getNomArticle());
-        request.setAttribute("parametre",request.getParameter("parametre"));
+
+        testArticle.setPrix(12);
+        testArticle.setId_article(1);
+        testArticle.setNom("Article");
+        
+        request.setAttribute("article", testArticle);
         
         this.getServletContext().getRequestDispatcher( "/WEB-INF/index.jsp" ).forward( request, response );
     }

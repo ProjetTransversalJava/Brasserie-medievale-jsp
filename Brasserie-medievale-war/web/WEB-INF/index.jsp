@@ -12,21 +12,11 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Hello World!</h1>  
+
+        ${ article.prix }
+        ${ article.nomArticle }
+        ${ article.idArticle }
         
-        <% 
-            out.print("<p>Id : ");
-            out.print(request.getAttribute("id"));
-            out.println("</p>");
-            out.print("<p>Prix : ");
-            out.print(request.getAttribute("prix"));
-            out.println("</p>");
-            out.print("<p>Article : ");
-            out.print(request.getAttribute("article"));
-            out.println("</p>");
-            out.print("<p>Parametre url : ");
-            out.print(request.getAttribute("parametre"));
-            out.println("</p>");
-        %>
     </body>
 </html>
