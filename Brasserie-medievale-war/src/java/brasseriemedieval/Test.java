@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package brasseriemedieval;
+
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -17,7 +18,9 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class Test extends HttpServlet {
     
-    Article testArticle = new Article("12", "article", "24");
+    Article testArticle = new Article();
+    
+    testArticle.setPrix(12);
     
     public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException{     
 	       

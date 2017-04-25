@@ -87,6 +87,27 @@ public class Article {
     {
         return id_article + " ; "+ nom + " ; "+ prix + "";
     }
+
+    /**
+     * @param id_article the id_article to set
+     */
+    public void setId_article(int id_article) {
+        this.id_article = id_article;
+    }
+
+    /**
+     * @param nom the nom to set
+     */
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    /**
+     * @param prix the prix to set
+     */
+    public void setPrix(int prix) {
+        this.prix = prix;
+    }
     
     
 }
